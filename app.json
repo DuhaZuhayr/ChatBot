@@ -1,17 +1,19 @@
 {
   "expo": {
-    "name": "my-chatbot-app",
-    "slug": "my-chatbot-app",
+    "name": "AgriBot",
+    "slug": "AgriBot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -19,12 +21,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      },
+      "supabaseUrl": "https://vuhscqyrnwqmijvshlzh.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1aHNjcXlybndxbWlqdnNobHpoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg2NDkxNDUsImV4cCI6MjA3NDIyNTE0NX0.bFTL2-t0qGLW_Pse2ytWAui5F-aM1iT4rcC4zxP2eBU",
+      "geminiApiKey": "AIzaSyAe5j_pMb7GkPhr__l4VeVcqYiXj0iWp0o",
+      "geminiModel": "gemini-2.0-flash"
     }
   }
 }
